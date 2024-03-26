@@ -1,0 +1,130 @@
+.notesbox {
+    background: #261F24;
+    height: 100%;
+    width: 900px;
+    margin: auto;
+    margin-top: 90px;
+    top: 0px;
+    border: 0.5px solid #DEB0D7;
+    border-radius: 10px;
+    padding: 2px;
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+
+        h1 {
+            text-decoration: none;
+            font-weight: normal;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #AA008A;
+            margin-bottom: 15px;
+            margin-left: 12px;
+        }
+
+        .newnote {
+            height: 30px;
+            width: 30px;
+            margin: 15px;
+            margin-top: 25px;
+            text-align: center;
+
+            .new-button {
+                border: none;
+                outline: none;
+                background: none;
+                background-color: #31282A;
+                color: #AA008A;
+                height: 33px;
+                width: 33px;
+                border: 1px solid #aa008a;
+                border-radius: 50%;
+                font-size: 25px;
+                transition: all ease-in 0.15s;
+            }
+
+            .new-button:hover {
+                box-shadow: 0px 0px 5px 0.5px black ;
+            }
+        }
+
+        
+    }
+
+
+    .note, .newbox {
+        font-family: 'Courier New', Courier, monospace;
+        width: 860px;
+        margin: auto;
+        margin-bottom: 10px;
+        min-height: 30px;
+        height: auto;
+        background-color: #5A4153;
+        color: #fff;
+        border-top: 2px solid #aa008a;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .note {
+        padding: 10px;
+    }
+
+    .newbox {
+        textarea {
+            background-color: #5A4153;
+            text-decoration: none;
+            border: none;
+            outline: none;
+            resize: none;
+            width: 840px;
+            height: 110px;
+            color: #fff;
+        }
+
+        .save {
+            border: none;
+            outline: none;
+            background-color: #261F24;
+            border-radius: 5px;
+            font-size: 15px;
+            margin-left: 25px;
+        }
+
+        .save:hover {
+            box-shadow: 0px 0px 5px 0.5px black ;
+        }
+    }
+
+    .note {
+        transition: all ease-in 1s;
+        display: flex;
+        gap: 10px;
+        
+        .content {
+            width: 95%;
+            overflow-wrap: break-word;
+            
+
+            .time {
+                font-size: 12px;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                color:#31282A;
+            }
+        }
+
+        .delete {
+            background-color: #261F24;
+            height: 28px;
+            width: 28px;
+            margin-top: 20%;
+            border-radius: 50%;
+            outline: none;
+            border: none
+        }
+
+        .delete:hover {
+            box-shadow: 0px 0px 5px 0.5px black ;
+        }
+    }
+}
